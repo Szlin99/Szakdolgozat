@@ -97,106 +97,53 @@ int main()
 }
 \end{lstlisting}
 
-\medskip
+\chapter{Telepítés}
 
-Ez pedig itt egy táblázat.
-
-\begin{center}
-\begin{booktabs}{colspec={ccc},row{even}={olive9}}
-\toprule
-{Ablakméret} &
-	Futási idő ($\mu s$) &
-	RAM mérete (bájt) \\
-\midrule
-8 &  16 & 228 \\
-12 & 52 & 236 \\
-16 & 24  & 244 \\
-24 & 64  & 260 \\
-32 & 36  & 276 \\
-64 & 64  & 340 \\
-128 & 120  & 468 \\
-256 &  228 & 724 \\
-512 &  464 & 1236 \\
-\bottomrule
-\end{booktabs}
-\end{center}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum
-sollicitudin augue, non gravida tortor suscipit et. Curabitur ac quam est.
-Donec maximus nisl dolor, non condimentum nibh pretium eget. Cras sagittis, dui
-quis aliquam placerat, sapien risus cursus arcu, at blandit nisi nisl at magna.
-Cras sagittis viverra augue id scelerisque. Mauris finibus consectetur augue,
-sit amet consequat velit egestas at. Mauris vitae ipsum placerat dui lobortis
-iaculis. Etiam suscipit pellentesque metus eu posuere. Sed consequat varius
-auctor.
-
-Az ábrák ,,lebegő ábrák'', ami azt jelenti, hogy nem feltétlenül pontosan
-oda kerülnek, ahova a .tex fájlban helyezzük őket, de a LaTeX mindig igyekszik
-jól elhelyezni azokat. Minden ábrának van egy címkéje, amit így tudunk használni:
-\Aref{fig-example} ábrán egy példa látható.
+A telepítéshez a Raspberry PI Imagert használtam, ami egy eleég egyszerű program.
+\Aref{fig-Imager} ábrán egy példa látható.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.35\textwidth]{fig/example.png}
-	\caption{Ez egy példa ábra. Minden ábrához kell képaláírás.}
-	\label{fig-example}
+	\includegraphics[width=0.35\textwidth]{fig/Imager.png}
+	\caption{A telepítő program.}
+	\label{fig-Imager}
 \end{figure}
+A programon bellül ki kell választanunk az operációs rendszert amit a Raspberry-n futtatni szeretnénk, ezen kívül a memóriakártyát, 
+ami a háttértárunk lesz. Amikor ezzel megvagyunk még a beállításokban meg kell adnunk az eszköznek egy felhasználónevet és egy jelszót
+valamint a router hozzáférési adatait.
+\Aref{fig-os} ábrán egy példa látható.
 
-\chapter{Követelmény specifikáció}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.35\textwidth]{fig/os.png}
+	\caption{A telepítő program.}
+	\label{fig-os}
+\end{figure}
+Ha ezzel megvagyunk akkor elindul egy lassabb telepítési folyamat, amely a memóriakártyára helyezi az operációs rendszert, ezután pedig
+egy ellenörzési folyamat, hogy minden rendben van-e.
+Miután ezzel megvagyunk a memóriakártyát behelyezzük a Raspberry-be, ahol egy lassabb boot után elindul az eszköz (amikor ez megtörtént
+akkor a led egy biztos ritmusra villog), ezután megkezdhetjük a hozzáférést az eszközhöz. 
+A hozzáféréshez szükségünk van a router kezelőfelületére, ahol meg kell keresnünk az eszközünket, a legjobb ha adunk neki
+egy saját nevet. Miután ez megvan a PuTTY segítségével hozzáférünk a Raspberry operációs rendszeréhez.
+\Aref{fig-putty} ábrán egy példa látható.
 
-Donec congue mattis velit sit amet consectetur. Class aptent taciti sociosqu ad
-litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque
-habitant morbi tristique senectus et netus et malesuada fames ac turpis
-egestas. Morbi porttitor tortor nisl. Aenean sit amet leo sit amet purus
-bibendum ullamcorper. Proin fermentum mollis urna, eu bibendum est faucibus a.
-Maecenas molestie, eros egestas vehicula ultrices, felis sapien sollicitudin
-eros, a vulputate tortor tortor at elit. Aliquam sit amet tristique mauris, non
-volutpat ipsum. Curabitur mattis mi sed condimentum laoreet. Cras finibus lacus
-a massa aliquam, at ultrices lorem elementum.
-
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.35\textwidth]{fig/putty.png}
+	\caption{A telepítő program.}
+	\label{fig-putty}
+\end{figure}
 
 \chapter{Rendszerterv}
 
-\section{Azon belül egy alfejezet}
+%\section{Azon belül egy alfejezet}
 
-Nam volutpat odio et tortor mattis pharetra. Aliquam id bibendum nibh, in
+%\subsection{Még egy szinttel beljebb}
 
-\subsection{Még egy szinttel beljebb}
-
-quam ut malesuada. Praesent elementum, ante ut accumsan mollis, nisi urna
-
-\section{Újabb alfejezet}
-
-dictum ligula. Cras condimentum enim nec porta molestie. Sed vel luctus elit.
-Fusce malesuada risus ex, eu molestie lorem fermentum in. Nullam malesuada ac
-accumsan mi, nec iaculis metus dui congue metus. Nullam id justo metus.
-Suspendisse a porttitor nunc. Proin risus tortor, gravida nec dui in, tristique
-mattis urna. Pellentesque rhoncus auctor leo, vel dapibus leo dictum quis.
-Phasellus tristique semper odio at bibendum. Quisque imperdiet feugiat enim id
-sodales. Morbi id metus mi. Phasellus ornare malesuada turpis id luctus.
-Vestibulum et efficitur tellus, a lacinia urna.
-
-Maecenas ipsum orci, varius non ultricies nec, dignissim eu arcu. Maecenas
-molestie rhoncus metus vel elementum. Aliquam erat volutpat. Proin lacinia ante
-a lacus pharetra, a faucibus metus dictum. Interdum et malesuada fames ac ante
-ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus
-et ultrices posuere cubilia curae; Etiam sit amet malesuada augue. Duis vel ex
-suscipit, blandit purus et, pharetra leo. Lorem ipsum dolor sit amet,
-consectetur adipiscing elit.
-
-Pellentesque malesuada sagittis congue. Phasellus magna nibh, eleifend eget
-augue in, pretium iaculis tellus. Morbi volutpat vehicula quam, pharetra
-ultrices urna vulputate quis. Integer id molestie lacus, vel malesuada nisi.
-Cras nec dui a enim facilisis consectetur. Orci varius natoque penatibus et
-magnis dis parturient montes, nascetur ridiculus mus. Phasellus facilisis ante
-ac porta fermentum. Phasellus ultrices, dolor nec suscipit feugiat, enim orci
-efficitur tortor, at tristique felis nibh vitae sem. Maecenas lobortis
-dignissim turpis, vel condimentum felis tempus nec. Fusce imperdiet ornare
-felis.
+%\section{Újabb alfejezet}
 
 \chapter{Megvalósítás}
 
-ksfgjslf
 
 \chapter{Összefoglalás}
 
