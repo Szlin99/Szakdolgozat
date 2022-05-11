@@ -139,9 +139,47 @@ programunkat, ezután pedig az input előtti gombbal be is kapcsoljuk, ekkor meg
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.35\textwidth]{fig/Hello, World.png}
-	\caption{PuTTY beállítás.}
+	\caption{Hello, World!}
 	\label{fig-Hello, World}
 \end{figure}
+
+A második részben több inputot használtam, hogy számokat tudjak bevinni egy outputra. A módszer haszonló mint az előzőnél
+csak itt számokat használtam. Működés szempontjából mindig egy számot kaptunk a kimeneten, mindig azt a számot, amely input előtti
+gombot megnyomtuk.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.35\textwidth]{fig/Numbers.png}
+	\caption{Számok bevitele.}
+	\label{fig-Numbers}
+\end{figure}
+
+A harmadik rész már egy komplexebb program, itt egy UI is van, valamint egy Chart. Az előző programból ismert számos módszer
+itt is szerepel viszon ez nem csak kimenetre, hanem egy chartra is rá van kötve. Ha a bemeneten lévő gombok valamelyikét megnyomjuk 
+akkor az adott szám megjelenik a grafikonon, ha pedig egyszerre többet megnyomunk akkor egy vonaldiagrammot rajzol nekünk.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.35\textwidth]{fig/uichart.png}
+	\caption{UI program.}
+	\label{fig-uichart}
+\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.35\textwidth]{fig/chart.png}
+	\caption{A gombok véletlenszerű megnyomása utáni adatok.}
+	\label{fig-chart}
+\end{figure}
+
+Az utolsó programhoz már használtam egy fizikai szenzort is. Ez a szenzor képes hőmérsékletet valamint páratartalmat mérni.
+Hasonlóan az előzőhöz a számok itt is megvannak azonban itt egy function részen keresztül jutnak el a kimenetre valamint a 
+grafikonra. Ez az eszköz a mért adatokból rajzol ki egy diagrammot. A szenzorhoz még csatlakozik egy külön programrész ahol be lehet
+állítani, hogy melyik pinen csatlakozik a Raspberry-hez.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.35\textwidth]{fig/dht.png}
+	\caption{A DHT szenzor programja.}
+	\label{fig-dht}
+\end{figure}
+Sajnos a szenzor több beállítás után sem akart működni.
 
 \chapter{Összefoglalás}
 
