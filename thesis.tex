@@ -100,7 +100,6 @@ Idén ennek a megismerésével foglalkoztam, valamint a node-REDdel. Ezek bemuta
 \chapter{Telepítés}
 
 A telepítéshez a Raspberry PI Imagert használtam, ami egy elég egyszerű program.
-\Aref{fig-Imager} ábrán egy példa látható.
 
 \begin{figure}[htbp]
 	\centering
@@ -111,7 +110,6 @@ A telepítéshez a Raspberry PI Imagert használtam, ami egy elég egyszerű pro
 A programon bellül ki kell választanunk az operációs rendszert amit a Raspberry-n futtatni szeretnénk, ezen kívül a memóriakártyát, 
 ami a háttértárunk lesz. Amikor ezzel megvagyunk még a beállításokban meg kell adnunk az eszköznek egy felhasználónevet és egy jelszót
 valamint a router hozzáférési adatait.
-\Aref{fig-os} ábrán egy példa látható.
 
 \begin{figure}[htbp]
 	\centering
@@ -125,7 +123,6 @@ Miután ezzel megvagyunk a memóriakártyát behelyezzük a Raspberry-be, ahol e
 akkor a led egy biztos ritmusra villog), ezután megkezdhetjük a hozzáférést az eszközhöz. 
 A hozzáféréshez szükségünk van a router kezelőfelületére, ahol meg kell keresnünk az eszközünket, a legjobb ha adunk neki
 egy saját nevet. Miután ez megvan a PuTTY segítségével hozzáférünk a Raspberry operációs rendszeréhez.
-\Aref{fig-putty} ábrán egy példa látható.
 
 \begin{figure}[htbp]
 	\centering
@@ -136,14 +133,15 @@ egy saját nevet. Miután ez megvan a PuTTY segítségével hozzáférünk a Ras
 
 \chapter{node-RED}
 
-%\section{Azon belül egy alfejezet}
-
-%\subsection{Még egy szinttel beljebb}
-
-%\section{Újabb alfejezet}
-
-\chapter{Megvalósítás}
-
+Az első node-RED-es próbálkozás egy egyszerű Hello, World! volt amihez igazából egy input és egy output részre van szükség.
+Az input részben megadjuk a stringet ami az üzenetünk és a két részt összekötjük. A Deploy gombra kattintva tudjuk elindítani a
+programunkat, ezután pedig az input előtti gombbal be is kapcsoljuk, ekkor megjelenik a Hello, World! felirat.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.35\textwidth]{fig/Hello, World.png}
+	\caption{PuTTY beállítás.}
+	\label{fig-Hello, World}
+\end{figure}
 
 \chapter{Összefoglalás}
 
