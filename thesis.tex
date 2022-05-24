@@ -84,7 +84,7 @@ Idén ennek a megismerésével foglalkoztam, valamint a node-REDdel. Ezek bemuta
 %(A sorszámozás, a keret, a behúzás stb. beállítható.)
 
 %Ez egy kis térköz
-\medskip
+%\medskip
 
 %Így tudunk kódot beszúrni
 %\begin{lstlisting}
@@ -110,6 +110,7 @@ A telepítéshez a Raspberry PI Imagert használtam, ami egy elég egyszerű pro
 	\caption{A telepítő program.}
 	\label{fig-Imager}
 \end{figure}
+
 A programon bellül ki kell választanunk az operációs rendszert amit a Raspberry-n futtatni szeretnénk, ezen kívül a memóriakártyát, 
 ami a háttértárunk lesz. Amikor ezzel megvagyunk még a beállításokban meg kell adnunk az eszköznek egy felhasználónevet és egy jelszót
 valamint a router hozzáférési adatait.
@@ -120,6 +121,7 @@ valamint a router hozzáférési adatait.
 	\caption{Operációs rendszerek.}
 	\label{fig-os}
 \end{figure}
+
 Ha ezzel megvagyunk akkor elindul egy lassabb telepítési folyamat, amely a memóriakártyára helyezi az operációs rendszert, ezután pedig
 egy ellenörzési folyamat, hogy minden rendben van-e.
 Miután ezzel megvagyunk a memóriakártyát behelyezzük a Raspberry-be, ahol egy lassabb boot után elindul az eszköz (amikor ez megtörtént
@@ -142,6 +144,7 @@ készítette. Az elkészítet programokat egy JSON fájlban tárolja.
 Az első node-RED-es próbálkozás egy egyszerű Hello, World! volt amihez igazából egy input és egy output részre van szükség.
 Az input részben megadjuk a stringet ami az üzenetünk és a két részt összekötjük. A Deploy gombra kattintva tudjuk elindítani a
 programunkat, ezután pedig az input előtti gombbal be is kapcsoljuk, ekkor megjelenik a Hello, World! felirat.
+
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.35\textwidth]{fig/Hello, World.png}
@@ -152,6 +155,7 @@ programunkat, ezután pedig az input előtti gombbal be is kapcsoljuk, ekkor meg
 A második részben több inputot használtam, hogy számokat tudjak bevinni egy outputra. A módszer haszonló mint az előzőnél
 csak itt számokat használtam. Működés szempontjából mindig egy számot kaptunk a kimeneten, mindig azt a számot, amely input előtti
 gombot megnyomtuk.
+
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.35\textwidth]{fig/Numbers.png}
@@ -168,6 +172,7 @@ akkor az adott szám megjelenik a grafikonon, ha pedig egyszerre többet megnyom
 	\caption{UI program.}
 	\label{fig-uichart}
 \end{figure}
+
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.35\textwidth]{fig/chart.png}
@@ -179,6 +184,7 @@ Az utolsó programhoz már használtam egy fizikai szenzort is. Ez a szenzor ké
 Hasonlóan az előzőhöz a számok itt is megvannak azonban itt egy function részen keresztül jutnak el a kimenetre valamint a 
 grafikonra. Ez az eszköz a mért adatokból rajzol ki egy diagrammot. A szenzorhoz még csatlakozik egy külön programrész ahol be lehet
 állítani, hogy melyik pinen csatlakozik a Raspberry-hez.
+
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.35\textwidth]{fig/dht.png}
