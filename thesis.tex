@@ -110,6 +110,23 @@ Különböző felhasználási területei vannak:
 
 A kis fogyasztási igénye miatt tökéletes például szerverek készíatéséhez.
 
+Néhány Raspberry modell:
+\begin{itemize}
+
+	\item{PI Model B}
+		
+	\item{PI Model A+}
+		
+	\item{PI Zero}
+		
+	\item{PI 3 Model B}
+		
+	\item{PI 4 Model A}
+		
+	\item{PI 400}
+		
+	\end{itemize}
+
 %\begin{itemize}
 
 %	\item{Első bullet point}
@@ -176,7 +193,19 @@ egy saját nevet. Miután ez megvan a PuTTY segítségével hozzáférünk a Ras
 \chapter{node-RED}
 
 A node-RED egy áramlás alapű fejlesztő környezet ahol grafikusan tudunk programot készíteni egy böngésző segítségével. Eredetileg az IBM
-készítette. Az elkészítet programokat egy JSON fájlban tárolja.
+készítette. Az elkészítet programokat egy JSON fájlban tárolja. A programozás grafikusan történik úgynevezett "node"-ok használatával,
+amelyek mindegyikének külön funkciója van, vannak amelyekhez adatot is kell rendelnünk. A node-okat kábelekkel kötjük össze amelyeken az
+adatok áramlanak. Ez a programozási fajta egyszerűbb mivel nem kell konkrétan a kódokat tudni csak a node-ok funkcióit, így
+szélesebb körben is könnyen használható.
+
+A node-RED egyszerűen elérhető egy webböngészőből. Ezen az oldalon megjelenik maga az editor, ahol a bal oldalon megtaláljuk a 
+node-okat, itt tudjuk kiválasztani a számunkra szükséges feladatokat amit aztán csak ki kell húznunk a középen lévő üres felületre.
+Némelyik node-nak értéket is kell adnunk ezt dupla kattintással megtehetjük amely előhoz egy felületet ahol különböző beállításokat
+találunk. Minden programhoz szükségünk van egy bemenetre és egy kimenetre. A programot a jobb felső sarokban lévő Deploy gombbal
+tudjuk elindítani ha ez megtörtént akkor a bemenet előtti gomb megnyomásával le is tudjuk futtatni a kódot.
+
+Már előre megírt kódokat is be tudunk tölteni, ha megvan hozzá a JSON fájl, egy egyszerű importálással. Ugyan így menteni is tudjuk
+a saját programunkat.
 
 Az első node-RED-es próbálkozás egy egyszerű Hello, World! volt amihez igazából egy input és egy output részre van szükség.
 Az input részben megadjuk a stringet ami az üzenetünk és a két részt összekötjük. A Deploy gombra kattintva tudjuk elindítani a
