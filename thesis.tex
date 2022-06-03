@@ -114,16 +114,48 @@ Néhány Raspberry modell:
 \begin{itemize}
 
 	\item{PI Model B}
+
+	Ez a modell egy 700 MHz-es ARM1176JZF-S processzorral rendelkezik, ami mellett egy Broadcom VideoCore IV-es videókártya is
+	megtalálható. A lapon még 512 MB RAM-ot is elhelyeztek. Portok tekintetében két USB 2.0, egy HDMI valamint egy 3.5mm-es Jack
+	is helyet kapott. Valamint van rajta 8 GPIO pin, egy UART, egy I2C bus, SPI, +3.3V, +5V, és föld.
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.5\textwidth]{fig/modelb.png}
+		\caption{A telepítő program.}
+		\label{fig-modelb}
+	\end{figure}
 		
 	\item{PI Model A+}
-		
-	\item{PI Zero}
+
+	Ez a modell abban tér el az előzőtől, hogy csak 256 MB RAM-ot tartalmaz, valamint több belső csatlakozója van (40 GPIO, CSI,DSI).
+	Külsö csatlakozókból pedig valamivel kevesebb 1 darab USB 2.0, 3.5mm Jack, HDMI.
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.5\textwidth]{fig/aplusz.png}
+		\caption{A telepítő program.}
+		\label{fig-aplusz}
+	\end{figure}
 		
 	\item{PI 3 Model B}
+
+	Ez a modell 10-szer gyorsabb mint az eredeti Model B ezt a 64 bites 4 magos ARMv7 processzornak köszönheti ami 1.2 GHz-en üzemel,
+	beépített Wlannal valamint Bluetooth-szal is felszerelték. A GPU egy kétmagos VideoCore IV, emellett 1 GB memória is helyet kapott.
+	Belső csatlakozókat tekintve 40 darab pin van a lapon ebből 27 GPIO, valamint +3.3V és 5V és a föld.
+	Külsö kimeneteknél HDMI, Composite RCA, 3.5mm Jack, 4 darab USB 2.0. CSI (Camera Serial Interface), DSI (Display Serial Interface).
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.5\textwidth]{fig/3b.png}
+		\caption{A telepítő program.}
+		\label{fig-3b}
+	\end{figure}
 		
 	\item{PI 4 Model A}
+
+	
 		
 	\item{PI 400}
+
+	\item{PI Zero}
 		
 	\end{itemize}
 
@@ -160,7 +192,7 @@ A telepítéshez a Raspberry PI Imagert használtam, ami egy elég egyszerű pro
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.35\textwidth]{fig/Imager.png}
+	\includegraphics[width=0.5\textwidth]{fig/Imager.png}
 	\caption{A telepítő program.}
 	\label{fig-Imager}
 \end{figure}
@@ -171,7 +203,7 @@ valamint a router hozzáférési adatait.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.35\textwidth]{fig/os.png}
+	\includegraphics[width=0.5\textwidth]{fig/os.png}
 	\caption{Operációs rendszerek.}
 	\label{fig-os}
 \end{figure}
@@ -185,7 +217,7 @@ egy saját nevet. Miután ez megvan a PuTTY segítségével hozzáférünk a Ras
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.35\textwidth]{fig/putty.png}
+	\includegraphics[width=0.5\textwidth]{fig/putty.png}
 	\caption{PuTTY beállítás.}
 	\label{fig-putty}
 \end{figure}
@@ -213,7 +245,7 @@ programunkat, ezután pedig az input előtti gombbal be is kapcsoljuk, ekkor meg
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.35\textwidth]{fig/Hello, World.png}
+	\includegraphics[width=0.5\textwidth]{fig/Hello, World.png}
 	\caption{Hello, World!}
 	\label{fig-Hello, World}
 \end{figure}
@@ -224,7 +256,7 @@ gombot megnyomtuk.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.35\textwidth]{fig/Numbers.png}
+	\includegraphics[width=0.5\textwidth]{fig/Numbers.png}
 	\caption{Számok bevitele.}
 	\label{fig-Numbers}
 \end{figure}
@@ -235,14 +267,14 @@ akkor az adott szám megjelenik a grafikonon, ha pedig egyszerre többet megnyom
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.35\textwidth]{fig/uichart.png}
+	\includegraphics[width=0.5\textwidth]{fig/uichart.png}
 	\caption{UI program.}
 	\label{fig-uichart}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.35\textwidth]{fig/chart.png}
+	\includegraphics[width=0.5\textwidth]{fig/chart.png}
 	\caption{A gombok véletlenszerű megnyomása utáni adatok.}
 	\label{fig-chart}
 \end{figure}
@@ -254,7 +286,7 @@ grafikonra. Ez az eszköz a mért adatokból rajzol ki egy diagrammot. A szenzor
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.35\textwidth]{fig/dht.png}
+	\includegraphics[width=0.5\textwidth]{fig/dht.png}
 	\caption{A DHT szenzor programja.}
 	\label{fig-dht}
 \end{figure}
